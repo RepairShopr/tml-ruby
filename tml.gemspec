@@ -47,6 +47,6 @@ Gem::Specification.new do |gem|
   gem.files       = Dir['{lib,config,tasks}/**/*'] + %w(LICENSE Rakefile README.md)
   gem.licenses    = 'MIT-CMU'
 
-  gem.add_dependency 'faraday', '~> 0.8'
-  gem.add_dependency 'nokogiri', '~> 1.5'
+  gem.add_dependency 'faraday', '>=0.8', '< 2.0'
+  gem.add_dependency 'nokogiri', '~> 1.12.4'
 end
