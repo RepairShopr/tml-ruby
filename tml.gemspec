@@ -48,5 +48,5 @@ Gem::Specification.new do |gem|
   gem.licenses    = 'MIT-CMU'
 
   gem.add_dependency 'faraday', '>=0.8', '< 2.0'
-  gem.add_dependency 'nokogiri', '~> 1.12.4'
+  gem.add_dependency 'nokogiri', '< 2.0'
 end
