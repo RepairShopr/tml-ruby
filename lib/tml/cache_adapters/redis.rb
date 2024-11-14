@@ -114,7 +114,7 @@ class Tml::CacheAdapters::Redis < Tml::Cache
     data = @cache.exist(versioned_key(key, opts))
     not data.nil?
   rescue Exception => ex
-    warn("Failed to check if key exist: #{ex.message}")
+    warn("Failed to check if key exists: #{ex.message}")
     false
   end
 
