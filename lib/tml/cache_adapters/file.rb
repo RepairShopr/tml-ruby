@@ -56,7 +56,7 @@ class Tml::CacheAdapters::File < Tml::Cache
 
     path = self.class.file_path(key)
 
-    if File.exists?(path)
+    if File.exist?(path)
       info("Cache hit: #{key}")
       self.class.cache[key] = JSON.parse(File.read(path))
       return self.class.cache[key]
@@ -78,7 +78,7 @@ class Tml::CacheAdapters::File < Tml::Cache
   end
 
   def exist?(key, opts = {})
-    File.exists?(self.class.file_path(key))
+    File.exist?(self.class.file_path(key))
   end
 
   def clear(opts = {})

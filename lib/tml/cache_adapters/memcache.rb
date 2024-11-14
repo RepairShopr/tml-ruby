@@ -93,7 +93,7 @@ class Tml::CacheAdapters::Memcache < Tml::Cache
     data = @cache.get(versioned_key(key, opts))
     not data.nil?
   rescue Exception => ex
-    warn("Failed to check if key exists: #{key}")
+    warn("Failed to check if key exist: #{key}")
     false
   end
 

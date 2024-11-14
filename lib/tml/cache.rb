@@ -126,7 +126,7 @@ module Tml
       # do nothing
     end
 
-    # checks if the key exists
+    # checks if the key exist
     def exist?(key, opts = {})
       false
     end
